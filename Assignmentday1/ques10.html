@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSX and Babel</title>
+    <style>
+        img{
+            width:25%;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+    const Image = function(){
+        return (
+            <>
+        <img src="https://m.media-amazon.com/images/I/71eql3ubN7L._AC_UY1000_.jpg" alt=""></img>
+       <h1>Automatic Watch </h1>
+       <h2>$ 350.00 USD</h2>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ea magnam nisi eius quos harum cum vel aspernatur autem quas aliquam voluptate, totam quam possimus eaque vitae maiores corrupti rem.</p>
+       <p><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum tenetur ea, pariatur porro reiciendis sunt similique quam nemo fuga quod? Nisi omnis suscipit quibusdam explicabo, soluta sunt. Nulla, provident eveniet!</b></p>
+       <u></u>
+       <p><b>Features</b></p>
+       <ul>
+        <li>Chronograph</li>
+        <li>Master Chronometer Certified</li>
+        <li>Tachymeter</li>
+        <li>Anti-Magnetic</li>
+        <li>Chronometer</li>
+        <li>Small Seconds</li>
+        </ul>
+        <b>PRODUCT DETAILS</b>
+        <p><b>Between lugs: </b>20 mm</p>
+        <p><b>Bracelet: </b>leather strap</p>
+        <p><b>Case:</b> Steel</p>
+        <p><b>Case Diameter: </b>42mm</p>
+        <p><b>Dial Color: </b>Black</p>
+        <p><b>Crystal: </b>Domed,scratch-resistant sapphire crystal with anti-reflective treatment inside </p>
+        <p><b>Water resistance: </b>5 bar (50 meter / 167 feet) </p>
+        <button>ADD TO CART </button>
+        <h4>2-3 business days delivery </h4>
+       </> 
+    )
+    }
+    const root = ReactDOM.createRoot(document.getElementById("root")).render(Image())
+    </script>
+  </body>
+</html>
